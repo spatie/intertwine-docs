@@ -1,0 +1,201 @@
+:root {
+  --baseline: 1.65rem;
+  --sidebar: 15rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: var(--baseline);
+  padding-bottom: 4rem;
+}
+
+a {
+  color: #2b6cb0;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  overflow: auto;
+  width: var(--sidebar);
+  background-color: #edf2f7;
+  color: #f7fafc;
+  padding: 2.5rem 2rem;
+}
+
+.sidebar h1 {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.025em;
+  color: #2d3748;
+  margin-bottom: var(--baseline);
+}
+
+.sidebar h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar li {
+}
+
+.page-wrapper {
+  margin-left: var(--sidebar);
+}
+
+.page {
+  max-width: 35em;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.page > * {
+  margin-top: var(--baseline);
+}
+
+.page h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: calc(var(--baseline) * 2);
+}
+
+.page h2 {
+  color: #363e49;
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-top: calc(var(--baseline) * 2);
+}
+
+.page h3 {
+  color: #6b747f;
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: calc(var(--baseline) * 2);
+}
+
+.page h2 a,
+.page h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page img {
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.05);
+  margin: var(--baseline) 2rem;
+  width: calc(100% - 4rem);
+}
+
+.page img + em {
+  color: #6b747f;
+  display: block;
+  font-size: 0.85em;
+  margin-top: calc(-1 * var(--baseline));
+  text-align: center;
+}
+
+.page pre,
+.page code {
+  background-color: #f4f6f7;
+  font-family: "Menlo", monospace;
+  font-size: 0.95em;
+}
+
+.page ol,
+.page ul {
+  margin-left: 1.5rem;
+}
+
+.page li {
+  margin-top: 0.5rem;
+}
+
+.page li li {
+  margin-top: 0;
+}
+
+.page ul ol,
+.page ul ul,
+.page ol ol,
+.page ol ul {
+  margin-left: 2rem;
+}
+
+.page table {
+  border-collapse: collapse;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+  width: 100%;
+}
+
+.page td,
+.page th {
+  padding: 0.25rem;
+}
+
+.page th {
+  border-bottom: 2px solid #ddd;
+  color: #6b747f;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.page td {
+  border-bottom: 1px solid #ddd;
+}
+
+.page td[align="left"] {
+  white-space: nowrap;
+}
+
+.page blockquote {
+  border-left: 1px solid #ddd;
+  padding-left: 2rem;
+  color: #6b747f;
+}
+
+.page blockquote > * + * {
+  margin-top: calc(var(--baseline) / 2);
+}
+
+.references {
+  margin-top: calc(var(--baseline) * 2);
+  padding-top: calc(var(--baseline) * 2);
+  border-top: 2px solid #edf2f7;
+}
+
+.references h2 {
+  color: #363e49;
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.references > ul {
+  margin-top: var(--baseline);
+}
+
+.reference:before,
+.reference:after {
+  color: #a0aec0;
+}
+
+.reference:before {
+  content: "[[";
+}
+
+.reference:after {
+  content: "]]";
+}

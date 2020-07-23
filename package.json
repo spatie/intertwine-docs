@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "intertwine",
+    "dev": "intertwine serve"
+  },
+  "dependencies": {
+    "intertwine": "^0.1.1"
+  }
+}
